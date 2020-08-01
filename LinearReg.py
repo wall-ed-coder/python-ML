@@ -63,7 +63,4 @@ class LinearRegression:
         return metrics
 
     def predict(self, X):
-        """
-            Думаю, тут все понятно. Сделать свои предсказания :)
-        """
         return np.hstack((X, np.ones((len(X), 1)))) @ self.W_b
